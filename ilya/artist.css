@@ -425,6 +425,10 @@ body {
         justify-content: center;
     }
 
+    .nav{
+        display: none;
+    }
+
 }
 
 @media(max-width:778px){

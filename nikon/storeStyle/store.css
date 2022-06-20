@@ -197,12 +197,34 @@ body {
     
 }
 
+@media(max-width: 1288px){
+    .gallaryImg{
+        display: none;
+    }
+
+    .line_products{
+        width: 100%;
+    }
+
+    .products{
+        width: 100%;
+    }
+
+    img{
+        width: 100%;
+    }
+}
+
 @media(max-width: 980px) {
     .line_products {
         width: 100%;
     }
 
     .gallaryImg {
+        display: none;
+    }
+
+    .nav{
         display: none;
     }
 }

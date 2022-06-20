@@ -1,30 +1,17 @@
+const burger = document.querySelector('.burger');
+const closed = document.querySelector('.closed');
+const leftSlider = document.querySelector('.leftSlider');
+const rightPart = document.querySelector('.rightPart');
 
-let btnArr = document.querySelectorAll('.btnstyle a');
-let catalogLineArr = document.querySelectorAll('.catalog_line_product');
+burger.addEventListener("click", () => {
+   
+    leftSlider.classList.add('leftSliderVisible');
+});
 
-console.log(btnArr);
-// console.log(catalogLineArr);
+closed.addEventListener("click", () => {
+    leftSlider.classList.remove('leftSliderVisible');
 
-for(let i = 0;i<btnArr.length;i++) {
-    btnArr[i].addEventListener('click' , (event) => {
-        let id = event.target.id;
-        console.log(id)
-        openCatalog(id);
-    })
-}
-
-
-
-function  openCatalog(id) {
-    catalogLineArr.forEach(item => {
-        item.style.display = 'none';
-        
-        console.log(`${id}-line`);
-
-        if(item.classList.contains(`${id}-line`)) {
-            item.style.display = 'flex'
-        }
+});
 
 
-        });
-} 
+
